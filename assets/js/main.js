@@ -69,16 +69,16 @@ function App() {
                 </span>
                 <div class="forecast clear">
                   <div class="time _8h">08:00
-                    <br> <span class=${_currentIconElement[0]}></span> <br> <span class="highTemp">${_currentWeatherData.forecast.forecastday[0].hour[8].temp_c}&#8451;</span> <br> <span class="lowTemp">${_currentWeatherData.forecast.forecastday[0].hour[8].condition.text}</span>
+                    <br> <span class=${_currentIconElement[0]}></span> <br> <span>${_currentWeatherData.forecast.forecastday[0].hour[8].temp_c}&#8451;</span> <br> <span class="lowTemp">${_currentWeatherData.forecast.forecastday[0].hour[8].condition.text}</span>
                   </div>
                   <div class="time _12h">12:00
-                     <br> <span class=${_currentIconElement[1]}></span> <br> <span class="highTemp">${_currentWeatherData.forecast.forecastday[0].hour[12].temp_c}&#8451</span> <br> <span class="lowTemp">${_currentWeatherData.forecast.forecastday[0].hour[12].condition.text}</span>
+                     <br> <span class=${_currentIconElement[1]}></span> <br> <span>${_currentWeatherData.forecast.forecastday[0].hour[12].temp_c}&#8451</span> <br> <span class="lowTemp">${_currentWeatherData.forecast.forecastday[0].hour[12].condition.text}</span>
                   </div>
                   <div class="time _16h">16:00
-                    <br> <span class=${_currentIconElement[2]}></span> <br> <span class="highTemp">${_currentWeatherData.forecast.forecastday[0].hour[16].temp_c}&#8451</span> <br> <span class="lowTemp">${_currentWeatherData.forecast.forecastday[0].hour[16].condition.text}</span>
+                    <br> <span class=${_currentIconElement[2]}></span> <br> <span>${_currentWeatherData.forecast.forecastday[0].hour[16].temp_c}&#8451</span> <br> <span class="lowTemp">${_currentWeatherData.forecast.forecastday[0].hour[16].condition.text}</span>
                   </div>
                   <div class="time _21h">21:00
-                    <br> <span class=${_currentIconElement[3]}></span> <br> <span class="highTemp">${_currentWeatherData.forecast.forecastday[0].hour[20].temp_c}&#8451</span> <br> <span class="lowTemp">${_currentWeatherData.forecast.forecastday[0].hour[20].condition.text}</span>                  
+                    <br> <span class=${_currentIconElement[3]}></span> <br> <span>${_currentWeatherData.forecast.forecastday[0].hour[20].temp_c}&#8451</span> <br> <span class="lowTemp">${_currentWeatherData.forecast.forecastday[0].hour[20].condition.text}</span>                  
                     </div>
                 </div>
               </div>
@@ -111,12 +111,9 @@ function App() {
             } else if (_currentWeatherData.forecast.forecastday[0].hour[i].condition.text == "Sunny")  {
                 _currentIconElement.push("Sunny");
                
-            } else if (_currentWeatherData.forecast.forecastday[0].hour[i].condition.text == "Patchy rain possible")  {
+            } else if (_currentWeatherData.forecast.forecastday[0].hour[i].condition.text == "Patchy rain possible" || _currentWeatherData.forecast.forecastday[0].hour[i].condition.text == "Light rain shower" ||  _currentWeatherData.forecast.forecastday[0].hour[i].condition.text == "Moderate rain")  {
                 _currentIconElement.push("Light");
-                
-            } else if (_currentWeatherData.forecast.forecastday[0].hour[i].condition.text == "Light rain")  {
-                _currentIconElement.push("Light");
-              
+                              
             } else if (_currentWeatherData.forecast.forecastday[0].hour[i].condition.text == "Heavy rain")  {
                 
                 _currentIconElement.push("Heavy");
@@ -125,7 +122,7 @@ function App() {
                 
                 _currentIconElement.push("Overcast");
                 
-            } else if (_currentWeatherData.forecast.forecastday[0].hour[i].condition.text == "Mist")  {
+            } else if (_currentWeatherData.forecast.forecastday[0].hour[i].condition.text == "Mist" || _currentWeatherData.forecast.forecastday[0].hour[i].condition.text == "Fog")  {
                 _currentIconElement.push("Mist");
                 
             } else if (_currentWeatherData.forecast.forecastday[0].hour[i].condition.text == "Snow")  {
