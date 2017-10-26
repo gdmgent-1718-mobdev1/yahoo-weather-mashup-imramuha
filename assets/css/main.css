@@ -1,0 +1,118 @@
+body {
+    background:#dbdbdb;
+  }
+  .clear {
+    clear:both;
+  }
+  .card {
+    width:600px;
+    height: 550px;
+    background: #fff;
+    margin:2em auto;
+    border-radius: .2em;
+    padding: 34px 20px 20px;
+  }
+  .city {
+    
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1.8em;
+    color:#5b5b5b;
+  }
+  .stickyNoteSearchForm {
+    align-content: center;
+    font-family: Roboto;
+
+    margin-top: 10px;
+    position: absolute;
+    left: 58.4%;
+    top: 2.8%;
+
+
+  }
+  .sun {
+    width:4em;
+    height:4em;
+    border-radius: 2.5em;
+    background: #FBD80A;
+    margin-top: 1em;
+  }
+  .temp {
+    float:right;
+    font-family:Roboto;
+    font-weight: 300;
+    font-size: 8.5em;
+    margin-top:-.75em;
+    margin-right: 30px;
+    color:#5b5b5b;
+  }
+  .variations {
+    font-family:Roboto;
+    font-wight:300;
+    color:#8c8c8c;
+    list-style:none;
+    margin-left:-2em;
+  }
+  .kph {
+     font-size:.8em;
+  }
+  .speed:before {
+    content:url('https://i.imgur.com/luN0Jmq.png');
+  }
+  .forecast {
+    width:100%;
+    margin:0 auto;
+  }
+  .time {
+    display:block;
+    width: 21.5%;
+    height:9em;
+    float:left;
+    margin: 0 .375em .5em;
+    text-align:center;
+    font-family:Roboto;
+    color: #5b5b5b;
+    border-right:.1em solid #d9d9d9;
+    line-height: 2;
+  }
+  ._21h {
+    border-right:none;
+  }
+  .highTemp {
+    font-weight:bold;
+  }
+  .lowTemp {
+    color: #8c8c8c;
+  }
+  .Snow {
+    content: url('images/snow.png');
+  }
+  .Sunny{
+    content: url('images/sunny.png');
+  }
+  .Clear{
+    content: url('images/sunny.png');
+  }
+  .Overcast {
+    content: url('images/overcast.png');
+  }
+  .Mist {
+    content: url('images/mist.png');
+  }
+  .Cloudy {
+    content: url('images/cloudy.png');
+  }
+  .Partly {
+    content: url('images/partlyCloudy.png');
+  }
+  .Light {
+    content: url('images/lightRain.png');
+  }
+  .Patchy {
+    content: url('images/lightRain.png');
+  }
+  .Heavy {
+    content: url('images/HeavyRain.png');
+  }
+
+
